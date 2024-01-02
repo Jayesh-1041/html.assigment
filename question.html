@@ -33,30 +33,46 @@
                     (Exampal:- < tag > This is HTML < /tag >, "Tag" is a Starting and Endig tag, Some "This is HTML" is element)
     
     <h2>Q-2)</h2>   What are tags and attributes in HTML ?
-    <h3>Ans.</h3>   ==>They are always in the opening tag and a name and a value. The most used attributes (id,class,src,alt)
+    <h3>Ans.</h3>   ==>the tags and attributes are within an element. While the elements tell the browser what to display The tags mark the beginning and the end of an element. They may not be for some elements, especially the closing tags.
+
+
     
     <h2>Q-3)</h2>   What are void element in HTML ? with Example
-    <h3>Ans.</h3>   ==> A void element is an element whose content model never allows it to have contents under any circumstances. void element can have attributes.
+    <h3>Ans.</h3>   ==> The Void elements only have a start tag; end tags must not be specified for void elements. In HTML, a void element must not have an end tag.
                      <br>
-                    (Example:- br,hr,img,input), < br >==> < br > is void element line brek, < hr >==> Horigantal line tag, < input type="text" > ==> input tag is in form tag
-    
-    <h2>Q-4)</h2>   What are HTML Entities ? with Example
-    <h3>Ans.</h3>   ==> An HTML entity is a piece of text begins with an (&) and ends with a (;).
+                    (Example:- br,hr,img,input), <br> br > is void element line brek, < hr >==> Horigantal line tag, < input type="text" > ==> input tag is in form tag
+                    <p>This is HTML</p>  
                     <br>
-                    (Exampal:- HTML are used to display characters and invisibl characters (like non-breqking apaces)
+                    <b>This is HTML</b>  
+                    <hr>
+                    <input type="name" name="" id="" placeholder="Enter your name"/>
+
+    <h2>Q-4)</h2>   What are HTML Entities ? with Example
+    <h3>Ans.</h3>   ==> Non-breaking Space A commonly used HTML entity is the non-breaking space: &nbsp;. A non-breaking space is a space not break into a new line.
+                    <br>
+                    (Exampal:- HTML are used to display characters and invisibl characters non-breqking apaces)
+                    <br>
+                    <p>This is a &lt;p&gt; tag.</p> 
+
+
     
     <h2>Q-5)</h2>   What are dufferent types of lists in HTML ? with ExampleS
     <h3>Ans.</h3>   ==> There are three types of lists in HTML. (1) Unorder list or Bulleted list(ul), (2) Order list or Numbered list.
                     <br>
                     (Example:- 1.Unorder list < ul style="list-style-type: square,circle.disc;" ><br>
-                                    < li >name< /li ><br>
-                                    < li >name< /li > 
-                                    < /ul >)
+                                    <h3><b><u>1.Unorder list</u></b></h3>
+                                    <ul type="square">
+                                    <li>Orange</li>
+                                    <li>Apple</li>
+                                    <li>Banana</li> 
+                                    </ul>
                                     <br>
                                     2. Order list< ol type="1,A,a" start="1" ><br>
-                                    < li>name< /li> <br>
-                                    < li>name< /li>
-
+                                    <h3><b><u>2.Order list</u></b></h3>
+                                    <ol type="1" start="1">
+                                    <li>Orange</li>
+                                    <li>Apple</li>
+                                    <li>Banana</li>
                                     </ol>
     
     <h2>Q-6)</h2>   What is the 'class' attribute in HTML ? with Example
@@ -64,22 +80,21 @@
                         <br>
                     (Exampal:- The class atribute is mostly used to class in a style sheet.)
                     <br>
-                    < div class="color">This is HTML< /div>
+                    <div class="color" style="color: blueviolet;">This is HTML</div>
                     <br>
-                    < dt class="color">This is HTML< /dt>
+                    <dt class="color" style="color: brown;">This is HTML</dt>
                     <br>
-                    < dd class="color">This is HTML< /dd>
+                    <dd class="color" style="color: chocolate;">This is HTML</dd>
     
     <h2>Q-7)</h2>   What is the difference between the 'id' attribute and the 'class' attribute of HTML element ? with Example
     <h3>Ans.</h3>   ==>The difference between class and id A class name can be used by multiple HTML elements and ID name is used to one HTML element in page.
                     <br>
                     (example:- The HTML page using the class name and id)
                                 <br>
-                                < div class="red">This is HTML< /div> <br>
-                                < div class="red">This is HTML< /div> <br>
-                                < div class="red">This is HTML< /div>
-                                <br>
-                                < div id="special",color,background-color,border > This is HTML< /div>
+                                <div class="color" style="color: red;">This is HTML</div> <br>
+                                <div class="color" style="color: chartreuse;">This is HTML</div><br>
+                                <div class="red" id="color" style="color: blueviolet;">This is HTML</div> <br>
+                                <div class="color" id="color" style="color: blue;"> This is HTML</div>
     
     <h2>Q-8)</h2>   What are the various formatting tags in HTML ?
     <h3>Ans.</h3>   ==>The various Formatting tages types of text. (<b> < b > bold text </b>, < strong > <strong> Important text </strong>, < i > <i> Italic text </i>, < em > <em> Emphasized text </em>, < smsll > <small> Smaller text </small>, < del > <del> Deleted text </del>, < mark > <mark> Marked text </mark> )   
@@ -105,9 +120,16 @@
                     < td rowspan="2">This is HTML< /td> 
     
     <h2>Q-11)</h2>  What is the difference between a block level element and an inline element ?
-    <h3>Ans.</h3>   ==> Inline elements never start a new line,(< i >,< em >,< mark >, < span >)
-                    <br>
-                    Block element is left to right side no space in the HTML element.(< p >, < div >)
+    <h3>Ans.</h3>   ==> A block-level element always starts on a new line, and the browsers automatically add some space before and after the element. An inline element does not start on a new line.
+                        <br>
+                        (Exampale:-) 
+                        <br>
+                        1.Block leval element
+                        <p>This is HTML</p>
+                        <div>This is HTML</div>
+                        <br>
+                        2.inline element,
+                        <span>This is HTML</span>
     
     <h2>Q-12)</h2>  How to create a Hyperlink in HTML ? with example
     <h3>Ans.</h3>   ==> Use the < a > element to define a link. Use the href atteribute to define the link address. open the linked document. 
